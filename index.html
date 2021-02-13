@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alexandra Hipolito | Projects - Pomodoro Timer</title>
+        
+    </head>
+
+    <body>
+        <audio id="breakSound" src="../pomodoro/timeforabreak.mp3" preload="auto"></audio>
+        <audio id="pomoSound" src="../pomodoro/timeforpomodoro.mp3" preload="auto"></audio>
+        <div class="header">
+            <div class="container clearfix">
+            <h1 id="status">Let's get to work!</h1>
+            </div>
+        </div>
+        
+        <div id="timer" class="container">
+            <button id="setPomo" class="buttons" onclick="setPomodoro();"><i class="fa fa-briefcase fa-4x" aria-hidden="true" aria-label="Set Pomodoro"></i></button>
+            <button id="setBreak" class="buttons" onclick="setBreak();"><i class="fa fa-coffee fa-4x" aria-hidden="true" aria-label="Set Break"></i></button><br>
+            
+            <button id="plus" onclick="increment();" class="customise"><i class="fa fa-arrow-up fa-3x" aria-hidden="true" aria-label="Increase timer by 1 minute"></i></button><br>
+            <span id="minutes" class="time">25</span>
+            <span class="time">:</span>
+            <span id="seconds" class="time">00</span><br>
+            <button id="minus" onclick="decrement();" class="customise"><i class="fa fa-arrow-down fa-3x" aria-hidden="true" aria-label="Decrease timer by 1 minute"></i></button><br>
+            
+            <div id="control">
+                <button id="startPomo" class="buttons" onclick="pomodoro();"><i class="fa fa-play fa-4x" aria-hidden="true"  aria-label="Start Pomodoro"></i></button>
+                <button id="pause" class="buttons" onclick="pauseTimer();"><i class="fa fa-pause fa-4x" aria-hidden="true"  aria-label="Pause Timer"></i></button>
+                <button id="reset" class="buttons" onclick="resetTimer();"><i class="fa fa-eject fa-4x" aria-hidden="true"  aria-label="Reset Timer"></i></button>
+            </div>   
+            
+        </div>
+        
+        <footer>Pomodoro-style timer made by <a href="http://alexhippo.github.io" target="_blank">Alexandra Hipolito</a>.<br>
+            Soothing alert sounds from <a href="http://lifehacker.com/5931463/make-your-notifications-less-intrusive-with-these-soothing-alerts" target="_blank">Lifehacker</a>.
+        </footer>
+        
+        
+        <!-- References -->
+        <script src="../pomodoro/pomodoro.js"></script>
+        <link rel="stylesheet" href="../pomodoro/pomodoro.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:700%7CLato" rel="stylesheet">
+    </body>
+    
+    
+</html>

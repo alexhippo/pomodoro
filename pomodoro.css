@@ -1,0 +1,78 @@
+/* Global */
+a {
+    color:#000;
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #e75a40;
+}
+.header h1#status {
+    display: inline=block;
+    height: 80px;
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    padding-top:5px;
+    color: white;
+}
+
+/* Timer */
+#timer {
+    width: 100%;
+    text-align:center;
+    margin-top:130px;
+    margin-bottom:5px;
+}
+
+.time {
+    font-size:100px;
+    font-family: 'Comfortaa', cursive;
+    color: #e75a40;
+}
+
+.customise {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+
+#control {
+    margin-top:30px;
+}
+
+.buttons {
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:20px;
+    width:65px;
+    height:65px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+
+.buttons:active, .customise:active {
+    color:#e75a40;
+    border:none;
+}
+
+
+/* Footer */
+footer {
+    text-align:center;
+    margin-top:30px;
+    font-family: 'Lato', sans-serif;
+    font-size:10px;
+}
+
